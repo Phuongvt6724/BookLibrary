@@ -1,4 +1,4 @@
-import ViewHistory from "../../components/client/history/viewHistory.jsx";
+import ViewHistory from "../../components/client/history/ViewHistory";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
