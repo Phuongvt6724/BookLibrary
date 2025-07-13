@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "react-loading-skeleton/dist/skeleton.css";
+
+* {
+  font-family: "Baloo Tamma 2", system-ui;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.react-loading-skeleton {
+  --base-color: rgb(169, 167, 167) !important;
+  --highlight-color: #c9c9c9 !important;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+.swiper-wrapper {
+  padding: 5px 0;
+}
+
+/* From Uiverse.io by Siyu1017 */
+.windows-loading-spinner {
+  box-sizing: border-box;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 2px;
+  overflow: visible;
+}
+
+.windows-loading-spinner > circle {
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transition: all 0.2s ease-in-out 0s;
+  animation: 2s linear 0s infinite normal none running loading-spinner;
+}
+
+@keyframes loading-spinner {
+  0% {
+    stroke-dasharray: 0.01px, 43.97px;
+    transform: rotate(0);
+  }
+
+  50% {
+    stroke-dasharray: 21.99px, 21.99px;
+    transform: rotate(450deg);
+  }
+
+  100% {
+    stroke-dasharray: 0.01px, 43.97px;
+    transform: rotate(1080deg);
+  }
+}
+
+.swiper-slide {
+  height: 100% !important;
+}
