@@ -116,10 +116,10 @@ export default function Product({
               {name}
             </p>
             <div className="mt-1 flex items-center gap-2">
-              <span className="text-[15px] font-semibold text-red-600">
+              <span className="sm:text-[15px] text-[14px] font-semibold text-red-600">
                 {formatPrice(priceDiscounted)}
               </span>
-              <span className="text-sm text-gray-400 line-through">
+              <span className="sm:text-sm text-[13px] text-gray-400 line-through">
                 {formatPrice(priceOriginal)}
               </span>
             </div>

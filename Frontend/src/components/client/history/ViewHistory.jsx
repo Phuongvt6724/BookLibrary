@@ -44,7 +44,7 @@ export default function ViewHistory() {
   return (
     <div className="max-w-screen-xl mx-auto my-10 px-5 sm:px-10">
       {history && history.length > 0 && (
-        <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center text-white mb-10 text-center border-b-4 border-blue-800 bg-blue-400 mx-auto w-full p-2 px-5 pt-3">
+        <h2 className="text-xl sm:text-3xl font-bold flex items-center justify-center text-white mb-10 text-center border-b-4 border-blue-800 bg-blue-400 mx-auto w-full p-2 px-5 pt-3">
           <FaHistory className="inline-block mr-2 mb-1" /> Lịch sử xem sản phẩm
         </h2>
       )}
@@ -65,7 +65,7 @@ export default function ViewHistory() {
             {history.slice(0, visibleCount).map((product, index) => (
               <div
                 className={`flex items-center gap-3 w-full p-2 ${
-                  index % 2 == 0 && "bg-gray-200"
+                  index % 2 == 0 && ""
                 }`}
                 key={index}
               >
@@ -73,7 +73,7 @@ export default function ViewHistory() {
                   {product.dateView}
                 </div>
                 <img src={product.image} alt={product.name} className="w-10" />
-                <Link to={`/category?search=${product.name}`} className="font-semibold line-clamp-1 w-[300px] cursor-pointer">
+                <Link to={`/category?search=${product.name}`} className="font-semibold line-clamp-1 min-w-[300px] cursor-pointer">
                   {product.name}
                 </Link>
                 <div className="items-center gap-3 flex mx-5">

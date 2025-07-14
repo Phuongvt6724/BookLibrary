@@ -16,7 +16,7 @@ export default function Favorites() {
   return (
     <div className="max-w-screen-xl mx-auto my-10 px-5 sm:px-10">
       {favorites.length > 0 && (
-        <h2 className="text-2xl sm:text-3xl font-bold flex items-center justify-center text-white mb-10 text-center border-b-4 border-pink-800 bg-pink-400 mx-auto w-full p-2 px-5 pt-3">
+        <h2 className="text-xl sm:text-3xl font-bold flex items-center justify-center text-white mb-10 text-center border-b-4 border-pink-800 bg-pink-400 mx-auto w-full p-2 px-5 pt-3">
           <IoHeartCircleSharp className="inline-block mr-2 mb-1" /> Sản phẩm yêu
           thích của bạn
         </h2>
