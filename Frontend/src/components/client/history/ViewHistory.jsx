@@ -96,7 +96,7 @@ export default function ViewHistory() {
                 <button
                   disabled={updateUserMutation.isPending && indexRemove === index}
                   onClick={() => handleDeleteHistory(index)}
-                  className="font-bold border border-red-500 text-red-500 px-3 py-1 text-sm rounded ml-auto cursor-pointer hover:bg-red-500 hover:text-white transition-colors duration-300"
+                  className="font-bold border border-red-500 text-nowrap justify-self-start ml-auto text-red-500 px-3 py-1 text-sm rounded  cursor-pointer hover:bg-red-500 hover:text-white transition-colors duration-300"
                 >
                     {updateUserMutation.isPending && indexRemove === index
                      ? (
